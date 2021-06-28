@@ -1,0 +1,4 @@
+---
+- name: Install Chezmoi
+  dnf: name=chezmoi state=latest
+  become: yes

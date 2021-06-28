@@ -1,5 +1,0 @@
----
-- name: Workstation
-  hosts: workstation
-  tasks:
-    - import_tasks: tasks/vim.yml

@@ -1,0 +1,4 @@
+---
+- name: Install Starship
+  dnf: name=starship state=latest
+  become: yes

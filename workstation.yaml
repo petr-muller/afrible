@@ -1,0 +1,6 @@
+---
+- name: Workstation
+  hosts: workstation
+  tasks:
+    - import_tasks: tasks/dotfiles.yaml
+    - import_tasks: tasks/cli.yaml
