@@ -2,3 +2,8 @@
 - name: Install Starship
   dnf: name=starship state=latest
   become: yes
+- name: Install fish
+  dnf:
+    name: fish
+    state: latest
+  become: yes
