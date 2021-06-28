@@ -1,4 +1,7 @@
 ---
 - name: Install Chezmoi
-  dnf: name=chezmoi state=latest
+  dnf:
+    name: https://github.com/twpayne/chezmoi/releases/download/v2.0.16/chezmoi-2.0.16-x86_64.rpm
+    state: latest
+    disable_gpg_check: true
   become: yes
