@@ -7,13 +7,8 @@
     name: fish
     state: latest
   become: yes
-- name: Set up fish for my user
-  become: no
-  vars:
-    my_user: "{{ ansible_user_id }}"
-  tasks:
-    - name: Change user shell to fish
-      become: yes
-      user:
-        name: "{{ my_user }}"
-        shell: /bin/fish
+- name: Change user shell to fish
+  become: yes
+  user:
+    name: "{{ ansible_user_id }}"
+    shell: /bin/fish
