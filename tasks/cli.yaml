@@ -7,6 +7,11 @@
     name: fish
     state: latest
   become: yes
+- name: Install autojump-fish
+  dnf:
+    name: autojump-fish
+    state: latest
+  become: yes
 - name: Change user shell to fish
   become: yes
   user:
