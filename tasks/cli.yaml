@@ -17,3 +17,8 @@
   user:
     name: "{{ ansible_user_id }}"
     shell: /bin/fish
+- name: Install vim
+  become: yes
+  dnf:
+    name: vim-enhanced
+    state: latest
