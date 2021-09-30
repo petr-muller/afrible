@@ -2,5 +2,7 @@
 - name: Workstation
   hosts: workstation
   tasks:
+    - import_tasks: tasks/repos.yaml
     - import_tasks: tasks/dotfiles.yaml
     - import_tasks: tasks/cli.yaml
+    - import_tasks: tasks/cloud.yaml

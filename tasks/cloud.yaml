@@ -1,0 +1,6 @@
+---
+- name: Install Google Cloud SDK
+  become: yes
+  dnf:
+    name: google-cloud-sdk
+    state: latest
