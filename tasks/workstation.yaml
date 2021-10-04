@@ -3,3 +3,8 @@
     name: dnf-plugin-system-upgrade
     state: latest
   become: yes
+- name: Install rpmconf
+  dnf:
+    name: rpmconf
+    state: latest
+  become: yes
