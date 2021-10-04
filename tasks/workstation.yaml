@@ -1,0 +1,5 @@
+- name: Install DNF upgrade plugin
+  dnf:
+    name: dnf-plugin-system-upgrade
+    state: latest
+  become: yes
