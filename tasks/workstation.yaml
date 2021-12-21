@@ -8,3 +8,8 @@
     name: rpmconf
     state: latest
   become: yes
+- name: Install GH CLI
+  dnf:
+    name: gh
+    state: latest
+  become: yes
