@@ -22,3 +22,13 @@
   dnf:
     name: vim-enhanced
     state: latest
+- name: Install ripgrep
+  become: yes
+  dnf:
+    name: ripgrep
+    state: latest
+- name: Install Silver Searcher
+  become: yes
+  dnf:
+    name: the_silver_searcher
+    state: latest
