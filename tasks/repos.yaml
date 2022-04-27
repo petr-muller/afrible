@@ -15,7 +15,7 @@
   yum_repository:
     name: gh-cli
     description: Packages for GH CLI
-    baseurl: https://cli.github.com/packages/rpm/gh-cli.repo
+    baseurl: https://cli.github.com/packages/rpm
     gpgcheck: yes
     enabled: yes
     gpgkey:
