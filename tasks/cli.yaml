@@ -32,3 +32,13 @@
   dnf:
     name: the_silver_searcher
     state: latest
+- name: Install lsd (ls deluxe)
+  become: yes
+  dnf:
+    name: lsd
+    state: latest
+- name: Install exa (modern replacement)
+  become: yes
+  dnf:
+    name: exa
+    state: latest
