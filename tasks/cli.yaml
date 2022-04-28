@@ -37,7 +37,7 @@
   dnf:
     name: lsd
     state: latest
-- name: Install exa (modern replacement)
+- name: Install exa (modern ls replacement)
   become: yes
   dnf:
     name: exa
