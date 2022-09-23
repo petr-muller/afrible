@@ -19,4 +19,4 @@
     gpgcheck: yes
     enabled: yes
     gpgkey:
-    - https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xc99b11deb97541f0
+    - https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x23F3D4EA75716059
