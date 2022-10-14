@@ -9,7 +9,6 @@
     repo_gpgcheck: no
     gpgkey:
     - https://packages.cloud.google.com/yum/doc/yum-key.gpg
-    - https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
 - name: Enable GH CLI Repository
   become: yes
   yum_repository:
