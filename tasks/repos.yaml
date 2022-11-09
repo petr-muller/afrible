@@ -19,3 +19,13 @@
     enabled: yes
     gpgkey:
     - https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x23F3D4EA75716059
+- name: Enable Charm Repository
+  become: yes
+  yum_repository:
+    name: charm
+    description: We build tools to make the command line glamorous.
+    baseurl: https://repo.charm.sh/yum/
+    gpgcheck: yes
+    enabled: yes
+    gpgkey:
+    - https://repo.charm.sh/yum/gpg.key

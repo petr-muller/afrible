@@ -52,3 +52,18 @@
   dnf:
     name: helix
     state: latest
+- name: Install Glow, the CLI Markdown viewer
+  become: yes
+  dnf:
+    name: glow
+    state: latest
+- name: Install Skate, the personal key-value store
+  become: yes
+  dnf:
+    name: skate
+    state: latest
+- name: Install Gum, the tool for glamorous CLI scripts
+  become: yes
+  dnf:
+    name: gum
+    state: latest
