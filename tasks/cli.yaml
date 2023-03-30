@@ -67,3 +67,8 @@
   dnf:
     name: gum
     state: latest
+- name: Install bat (modern cat replacement)
+  become: yes
+  dnf:
+    name: bat
+    state: latest
