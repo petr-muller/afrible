@@ -37,10 +37,10 @@
   dnf:
     name: lsd
     state: latest
-- name: Install exa (modern ls replacement)
+- name: Install eza (modern ls replacement)
   become: yes
   dnf:
-    name: exa
+    name: eza
     state: latest
 - name: Enable varlad Copr to install Helix
   become: yes
