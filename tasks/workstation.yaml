@@ -13,3 +13,16 @@
     name: gh
     state: latest
   become: yes
+- name: Install Discord
+  community.general.flatpak:
+    name:
+    - com.discordapp.Discord
+- name: Install Obsidian
+  community.general.flatpak:
+    name:
+    - md.obsidian.Obsidian
+- name: Install Slack
+  dnf:
+    name: slack
+    state: latest
+  become: yes

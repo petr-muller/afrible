@@ -1,0 +1,10 @@
+---
+- name: Install Golang
+  dnf:
+    name: golang-bin
+    state: latest
+  become: yes
+- name: Install GoLand
+  community.general.flatpak:
+    name:
+    - com.jetbrains.GoLand

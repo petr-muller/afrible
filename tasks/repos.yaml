@@ -1,14 +1,3 @@
-- name: Enable Google Cloud SDK Repos
-  become: yes
-  yum_repository:
-    name: google-cloud-sdk
-    description: Google Cloud SDK
-    baseurl: https://packages.cloud.google.com/yum/repos/cloud-sdk-el8-x86_64
-    gpgcheck: yes
-    enabled: yes
-    repo_gpgcheck: no
-    gpgkey:
-    - https://packages.cloud.google.com/yum/doc/yum-key.gpg
 - name: Enable GH CLI Repository
   become: yes
   yum_repository:

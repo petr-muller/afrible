@@ -6,4 +6,5 @@
     - import_tasks: tasks/workstation.yaml
     - import_tasks: tasks/dotfiles.yaml
     - import_tasks: tasks/cli.yaml
+    - import_tasks: tasks/development.yaml
     - import_tasks: tasks/cloud.yaml
