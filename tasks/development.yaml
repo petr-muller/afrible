@@ -4,7 +4,8 @@
     name: golang-bin
     state: latest
   become: yes
-- name: Install GoLand
-  community.general.flatpak:
-    name:
-    - com.jetbrains.GoLand
+- name: Install goimports
+  dnf:
+    name: golang-x-tools-goimports
+    state: latest
+  become: yes
