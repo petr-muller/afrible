@@ -1,6 +1,6 @@
 ---
-- name: Install Google Cloud SDK
+- name: Install Google Cloud CLI
   become: yes
   dnf:
-    name: google-cloud-sdk
+    name: google-cloud-cli
     state: latest
