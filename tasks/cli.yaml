@@ -92,3 +92,13 @@
   dnf:
     name: asciinema
     state: latest
+- name: Enable copr for ocp-sso-token
+  become: yes
+  community.general.copr:
+    state: enabled
+    name: '@cki/ocp-sso-token'
+- name: Install ocp-sso-token
+  become: yes
+  dnf:
+    name: ocp-sso-token
+    state: latest
