@@ -8,3 +8,6 @@
     - import_tasks: tasks/cli.yaml
     - import_tasks: tasks/development.yaml
     - import_tasks: tasks/cloud.yaml
+    - import_tasks: tasks/go.yaml
+    - import_tasks: tasks/asdf.yaml
+    - import_tasks: tasks/rust.yaml

@@ -1,0 +1,5 @@
+- name: Install taplo-cli with cargo
+  community.general.cargo:
+    name: taplo-cli
+    locked: yes
+    state: present

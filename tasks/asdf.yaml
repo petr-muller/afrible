@@ -1,0 +1,24 @@
+- name: Install asdf
+  command: go install github.com/asdf-vm/asdf/cmd/asdf@latest
+  become: false
+
+- name: Install nodejs asdf plugin
+  command: asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+  become: false
+
+- name: Install nodejs via asdf
+  command: asdf install nodejs latest
+  become: false
+
+- name: Enable global nodejs via asdf
+  command: asdf set nodejs latest
+  become: false
+
+- name: Install fish-lsp
+  command: npm install -g fish-lsp
+  become: false
+
+- name: Install YAML LSP
+  command: npm install -g yaml-language-server
+  become: false
+

@@ -1,0 +1,15 @@
+- name: Install gopls
+  command: go install golang.org/x/tools/gopls@latest
+  become: false
+
+- name: Install golangci-lint-langserver
+  command: go install github.com/nametake/golangci-lint-langserver@latest
+  become: false
+
+- name: Install dlv
+  command: go install github.com/go-delve/delve/cmd/dlv@latest
+  become: false
+
+- name: Install gofumpt
+  command: go install mvdan.cc/gofumpt@latest
+  become: false
