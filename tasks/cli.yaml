@@ -47,11 +47,6 @@
   dnf:
     name: eza
     state: latest
-- name: Enable varlad Copr to install Helix
-  become: yes
-  community.general.copr:
-    state: enabled
-    name: varlad/helix
 - name: Install helix
   become: yes
   dnf:
