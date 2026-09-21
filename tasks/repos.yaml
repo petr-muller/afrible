@@ -1,3 +1,13 @@
+- name: Enable GH CLI Repository
+  become: yes
+  yum_repository:
+    name: gh-cli
+    description: Packages for GH CLI
+    baseurl: https://cli.github.com/packages/rpm
+    gpgcheck: yes
+    enabled: yes
+    gpgkey:
+    - https://cli.github.com/packages/githubcli-archive-keyring.asc
 - name: Enable Charm Repository
   become: yes
   yum_repository:
